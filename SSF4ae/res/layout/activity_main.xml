@@ -1,0 +1,35 @@
+<com.lavaspark.ssf4.AnimationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animation_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/animation_layout_sidebar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_menu_bg"
+             >
+        </ListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/animation_layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" />
+    </FrameLayout>
+
+</com.lavaspark.ssf4.AnimationLayout>

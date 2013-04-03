@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lavaspark.ssf4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <application
+        android:name="com.lavaspark.util.GlobalVariables"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lavaspark.ssf4.MainActivity"
+            android:label="@string/app_name" />
+<!--             android:uiOptions="splitActionBarWhenNarrow"/> 
+ -->           
+         <activity android:name=".SplashActivity"
+            	android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lavaspark.ssf4.WallpaperActivity"
+            android:label="Wallpaper" />
+        <activity
+            android:name="com.lavaspark.ssf4.VideoActivity"
+            android:label="Video" />
+        <activity
+            android:name="com.lavaspark.ssf4.FrameDataActivity"
+            android:label="FrameData" />
+        <activity
+            android:name="com.lavaspark.ssf4.ForumActivity"
+            android:label="Forum" />
+        <activity
+            android:name="com.lavaspark.ssf4.OtherActivity"
+            android:label="Other" />
+        <activity
+            android:name="com.lavaspark.ssf4.ZhaoShiActivity"
+            android:label="Zhaoshi" />
+        <activity
+            android:name="com.lavaspark.ssf4.PanDingActivity"
+            android:label="Panding" />
+        <activity
+            android:name="com.lavaspark.ssf4.ForumEvaluateActivity"
+            android:label="Evaluate" />
+        <activity
+            android:name="com.lavaspark.ssf4.VideoPlayActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:screenOrientation="landscape"            
+             />
+        <activity android:name="com.lavaspark.ssf4.Forumpersonalveiwpoint"></activity>
+        <activity
+            android:name="com.lavaspark.ssf4.ForumDetailActivity"
+            android:label="ForumDetail" />
+        <activity android:name="com.lavaspark.ssf4.EveryMoveattr"></activity>
+        <activity android:name="com.lavaspark.ssf4.Image_Switch"></activity>
+        <service android:name="com.lavaspark.service.MintentService"></service>
+    </application>
+    
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+</manifest>

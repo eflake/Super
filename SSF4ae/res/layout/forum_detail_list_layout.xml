@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/assess_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/assess_date"
+        android:layout_alignBottom="@+id/assess_date"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/assess_date"
+        android:text="Mike" />
+
+    <TextView
+        android:id="@+id/assess_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/point"
+        android:drawablePadding="12dp"
+        android:text="《超级街霸4 AE》Feilong实战心" />
+
+    <TextView
+        android:id="@+id/assesslikedegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/assess_info"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/assess_heart"
+        android:drawablePadding="5dp"
+        android:text="21" />
+
+    <TextView
+        android:id="@+id/assess_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/assesslikedegree"
+        android:layout_alignBottom="@+id/assesslikedegree"
+        android:layout_toLeftOf="@+id/assesslikedegree"
+        android:layout_marginRight="20dp"
+        android:text="2013-02-01" />
+
+    <TextView
+        android:id="@+id/assess_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/assess_author"
+        android:layout_alignBottom="@+id/assess_author"
+        android:layout_alignLeft="@+id/assess_info"
+        android:visibility="gone"
+        android:text="TextView" />
+
+</RelativeLayout>

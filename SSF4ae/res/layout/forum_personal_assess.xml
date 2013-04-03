@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/itembackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/review_source"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/titlebackground"
+        android:text="Feilong VS  Ryu" />
+
+    <TextView
+        android:id="@+id/reviewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_source"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="title" />
+
+    <TextView
+        android:id="@+id/reviewcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reviewtitle"
+        android:layout_marginTop="31dp"
+        android:padding="10dp"
+        android:text="content" />
+
+    <TextView
+        android:id="@+id/authordata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="14dp"
+        android:text=" Mike     213-02-01" />
+
+    <TextView
+        android:id="@+id/likedegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/authordata"
+        android:layout_above="@+id/authordata"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/point"
+        android:drawablePadding="5dp"
+        android:text="21"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>
